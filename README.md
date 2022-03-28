@@ -4,7 +4,7 @@
 
 System with [git](https://git-scm.com/) and [docker compose](https://docs.docker.com/compose/) installed. Working unix-like environment (WSL2 for windows, or a mac [with developer tools installed](https://www.freecodecamp.org/news/install-xcode-command-line-tools/) or linux machine)
 
-A github user account.
+A GitHub user account.
 
 Editor or IDE ([PyCharm](https://www.jetbrains.com/pycharm/) recommended, either professional or community) capable of working with python files. I recommend you use the professional trial version.
 
@@ -12,7 +12,7 @@ Editor or IDE ([PyCharm](https://www.jetbrains.com/pycharm/) recommended, either
 
 ## Setup
 
-In github, [go to the template repository for this class](https://github.com/StrongMind/cohort_template), clone into your personal GitHub, by selecting "Use This Template".
+In GitHub, [go to the template repository for this class](https://github.com/StrongMind/cohort_template), clone into your personal GitHub, by selecting "Use This Template".
 
 In WSL2 (windows) or a terminal (Mac)
 
@@ -20,7 +20,7 @@ In WSL2 (windows) or a terminal (Mac)
 
 `docker-compose build`
 
-Open the project in pycharm by opening the project folder inside of it
+Open the project in pycharm by opening the project folder
 
 In PyCharm preferences (you may need to install the docker plugin, before this is available):
 
@@ -43,7 +43,7 @@ In WSL2 or a terminal:
 
 Those two steps should have created a new project inside your repository named "cohort". In the future, when we talk about "from a docker bash prompt", you will use `docker-compose run web bash` to get there. 
 
-In PyCharm, right click on the `cohort` folder, then Mark directory as sources root.
+In PyCharm, right-click on the `cohort` folder, then Mark directory as sources root.
 
 Finally, right click on `docker-compose.yml` and click "run docker-compose.yml". (If you decided not to use PyCharm, you would run `docker-compose up` here.)
 
@@ -119,7 +119,7 @@ If you are using PyCharm, you can automatically run tests whenever changes are m
 * Save this by pressing okay, then selecting Run -> Run pytest in cohort
 * Test runs will appear at the bottom of you window; to turn on auto-test, select the icon to the left two below the green run icon.
 
-Let's set up your first couple of tests working toward building this system.  Copy and paste the following into `test_topic.py`
+Let's set up a couple of tests working toward building this system.  Copy and paste the following into `test_topic.py`
 
 ```python
 import factory.django
