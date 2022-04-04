@@ -1,28 +1,9 @@
 import datetime
-
-import factory.django
 import pytest
 from freezegun import freeze_time
-from django.contrib.auth.models import User
 
 from forum.models import Topic
-
-
-class UserFactory(factory.django.DjangoModelFactory):
-    class Meta:
-        model = User
-
-    email = factory.Faker('email')
-    username = factory.Faker('user_name')
-
-
-class TopicFactory(factory.django.DjangoModelFactory):
-    class Meta:
-        model = Topic
-
-    title = factory.Faker('sentence')
-    created_by = factory.SubFactory(UserFactory)
-
+from forum.tests_factories import TopicFactory
 
 @pytest.mark.django_db
 def describe_topic():
