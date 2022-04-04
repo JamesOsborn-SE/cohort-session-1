@@ -23,6 +23,7 @@ class TopicFactory(factory.django.DjangoModelFactory):
 class PostFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = Post
+
     comment = factory.Faker('sentence')
     created_by = factory.SubFactory(UserFactory)
     topic = factory.SubFactory(TopicFactory)
